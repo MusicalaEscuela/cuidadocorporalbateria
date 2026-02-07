@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cuidado corporal y hábitos de práctica · Batería · Musicala</title>
+
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="top">
+    <div class="wrap topbar">
+      <div class="brand">
+        <div class="brandDot" aria-hidden="true"></div>
+        <div class="brandTxt">
+          <div class="crumbs">Programas <span>›</span> Batería Experiencia I <span>›</span> Cuidado corporal</div>
+          <h1>Cuidado corporal y hábitos de práctica</h1>
+          <p class="sub">
+            Hábitos simples para tocar batería con más comodidad, control y constancia, sin lesionarte ni agotarte.
+          </p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <div class="progress" aria-label="Progreso de hábitos">
+          <div class="progressTop">
+            <span class="progressLabel">Progreso</span>
+            <span class="progressValue" id="progressValue">0%</span>
+          </div>
+          <div class="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="progressFill" id="progressFill"></div>
+          </div>
+        </div>
+
+        <button class="btn ghost" id="btnReset" type="button" title="Reiniciar marcaciones">
+          Reiniciar
+        </button>
+        <a class="btn primary" href="#cards" id="btnStart">
+          ▶ Empezar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" class="main">
+    <section class="wrap">
+      <div class="note">
+        <div class="noteIcon" aria-hidden="true">🥁</div>
+        <div class="noteTxt">
+          <strong>Tip rápido:</strong> Si algo duele (dolor punzante, hormigueo o entumecimiento), no es “parte del proceso”.
+          Baja intensidad o para y ajusta postura. Tu cuerpo no es un consumible.
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="cards">
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card" data-card="postura">
+          <div class="cardBar" aria-hidden="true"></div>
+          <header class="cardHead">
+            <h2>Postura y ergonomía</h2>
+            <p>Ajustes básicos para que el cuerpo trabaje contigo, no contra ti.</p>
+          </header>
+
+          <div class="chips" role="list">
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="postura:asiento" />
+              <span class="chipIcon" aria-hidden="true">🪑</span>
+              <span>Asiento: cadera un poco más alta que rodillas</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="postura:caja" />
+              <span class="chipIcon" aria-hidden="true">🥁</span>
+              <span>Caja cómoda: antebrazos relajados, sin subir hombros</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="postura:pedales" />
+              <span class="chipIcon" aria-hidden="true">🦶</span>
+              <span>Pedales: pies estables, tensión mínima</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="postura:hombros" />
+              <span class="chipIcon" aria-hidden="true">🧠</span>
+              <span>Hombros abajo, cuello largo, mandíbula suelta</span>
+            </label>
+          </div>
+
+          <footer class="cardFoot">
+            <button class="btn tiny" type="button" data-action="markAll" data-card="postura">Marcar todo</button>
+            <button class="btn tiny ghost" type="button" data-action="clearCard" data-card="postura">Limpiar</button>
+          </footer>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" data-card="warmup">
+          <div class="cardBar" aria-hidden="true"></div>
+          <header class="cardHead">
+            <h2>Calentamiento inteligente</h2>
+            <p>5–10 minutos para despertar coordinación y evitar tensión.</p>
+          </header>
+
+          <div class="chips" role="list">
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="warmup:movilidad" />
+              <span class="chipIcon" aria-hidden="true">✋</span>
+              <span>Movilidad suave: muñecas, hombros, cuello</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="warmup:rudimentos" />
+              <span class="chipIcon" aria-hidden="true">🧩</span>
+              <span>Rudimentos lentos (single/double) 2 min</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="warmup:tempo" />
+              <span class="chipIcon" aria-hidden="true">⏱️</span>
+              <span>Subir tempo gradualmente, sin forzar</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="warmup:respira" />
+              <span class="chipIcon" aria-hidden="true">🧘</span>
+              <span>Respira y suelta: menos fuerza, más control</span>
+            </label>
+          </div>
+
+          <footer class="cardFoot">
+            <button class="btn tiny" type="button" data-action="markAll" data-card="warmup">Marcar todo</button>
+            <button class="btn tiny ghost" type="button" data-action="clearCard" data-card="warmup">Limpiar</button>
+          </footer>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" data-card="pausas">
+          <div class="cardBar" aria-hidden="true"></div>
+          <header class="cardHead">
+            <h2>Hidratación y pausas</h2>
+            <p>La resistencia se construye con pausas, no con terquedad.</p>
+          </header>
+
+          <div class="chips" role="list">
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="pausas:agua" />
+              <span class="chipIcon" aria-hidden="true">💧</span>
+              <span>Agua durante la práctica (no solo al final)</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="pausas:descanso" />
+              <span class="chipIcon" aria-hidden="true">⏳</span>
+              <span>Pausa 2–3 min cada 20–30 min</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="pausas:dolor" />
+              <span class="chipIcon" aria-hidden="true">🛑</span>
+              <span>Si duele: baja intensidad o para y ajusta</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="pausas:sueño" />
+              <span class="chipIcon" aria-hidden="true">😴</span>
+              <span>Sueño y descanso: parte del progreso</span>
+            </label>
+          </div>
+
+          <footer class="cardFoot">
+            <button class="btn tiny" type="button" data-action="markAll" data-card="pausas">Marcar todo</button>
+            <button class="btn tiny ghost" type="button" data-action="clearCard" data-card="pausas">Limpiar</button>
+          </footer>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" data-card="cierre">
+          <div class="cardBar" aria-hidden="true"></div>
+          <header class="cardHead">
+            <h2>Después de practicar</h2>
+            <p>Cierra la sesión sin cargar tensión al día siguiente.</p>
+          </header>
+
+          <div class="chips" role="list">
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="cierre:estirar" />
+              <span class="chipIcon" aria-hidden="true">🧘</span>
+              <span>Estira suave: antebrazo, hombro, cuello</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="cierre:descanso" />
+              <span class="chipIcon" aria-hidden="true">🧊</span>
+              <span>Si hubo sobreuso: descanso activo (no castigo)</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="cierre:notas" />
+              <span class="chipIcon" aria-hidden="true">📝</span>
+              <span>1 nota: qué salió bien y qué ajustar</span>
+            </label>
+
+            <label class="chip" role="listitem">
+              <input type="checkbox" data-key="cierre:groove" />
+              <span class="chipIcon" aria-hidden="true">🎧</span>
+              <span>Termina con un groove fácil para “cerrar limpio”</span>
+            </label>
+          </div>
+
+          <footer class="cardFoot">
+            <button class="btn tiny" type="button" data-action="markAll" data-card="cierre">Marcar todo</button>
+            <button class="btn tiny ghost" type="button" data-action="clearCard" data-card="cierre">Limpiar</button>
+          </footer>
+        </article>
+      </div>
+
+      <section class="extras">
+        <div class="extrasGrid">
+          <div class="panel">
+            <h3>Señales de alerta 🚨</h3>
+            <ul>
+              <li><strong>Dolor punzante</strong>, hormigueo o entumecimiento no es normal.</li>
+              <li>Si el dolor <strong>sigue al día siguiente</strong>, hubo sobrecarga.</li>
+              <li>Rigidez constante = revisa postura, altura y tensión al agarrar baquetas.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Rutina corta recomendada ⏱️</h3>
+            <ol>
+              <li>5 min: movilidad + rudimentos lentos</li>
+              <li>10 min: técnica (un objetivo)</li>
+              <li>10 min: groove/canción con metrónomo</li>
+              <li>5 min: cierre + estirar</li>
+            </ol>
+            <p class="mini">Constancia &gt; intensidad. El cuerpo agradece.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <div class="footCard">
+          <div class="footLeft">
+            <div class="badge">Musicala</div>
+            <div class="footTxt">
+              <strong>Tip final:</strong> tocar batería no es pelear con el instrumento.
+              Es aprender a moverse con eficiencia. Menos fuerza, más sonido.
+            </div>
+          </div>
+          <a class="btn primary" href="#contenido">Volver arriba</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
